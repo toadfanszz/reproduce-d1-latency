@@ -3,6 +3,14 @@ name = "reproduce-d1-latency"
 main = "src/index.ts"
 compatibility_date = "2024-08-21"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "reproduce-d1-latency-demo"
+database_id = "bc4eb97d-b530-4125-8e25-1e1fb2d9ccdb"
+
+[placement]
+mode = "smart"
+
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
 # rather than the end user may result in better performance.
